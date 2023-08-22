@@ -7,7 +7,17 @@ const config: Config = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				"primary-dark": "#292B35",
+				"primary-gray": "#D9D9D9",
+				"primary-golden": "#A18150",
+			},
+			fontFamily: {
+				oxanium: "'Oxanium', cursive",
+				quicksand: "'Quicksand', sans-serif",
+			},
+		},
 	},
 	plugins: [],
 };
