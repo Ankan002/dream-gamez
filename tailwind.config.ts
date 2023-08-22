@@ -10,6 +10,8 @@ const config: Config = {
 		extend: {
 			colors: {
 				"primary-dark": "#292B35",
+				"primary-gray": "#D9D9D9",
+				"primary-golden": "#A18150",
 			},
 			fontFamily: {
 				oxanium: "'Oxanium', cursive",
