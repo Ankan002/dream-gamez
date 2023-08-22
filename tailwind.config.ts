@@ -11,6 +11,10 @@ const config: Config = {
 			colors: {
 				"primary-dark": "#292B35",
 			},
+			fontFamily: {
+				oxanium: "'Oxanium', cursive",
+				quicksand: "'Quicksand', sans-serif",
+			},
 		},
 	},
 	plugins: [],
