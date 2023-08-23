@@ -16,6 +16,10 @@ const config: Config = {
 			fontFamily: {
 				oxanium: "'Oxanium', cursive",
 				quicksand: "'Quicksand', sans-serif",
+				poppins: "'Poppins', sans-serif",
+			},
+			backgroundImage: {
+				"home-hero-bg": "url('/images/home-hero-bg.png')",
 			},
 		},
 	},
