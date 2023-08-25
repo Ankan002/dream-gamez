@@ -12,7 +12,8 @@ const config: Config = {
 				"primary-dark": "#292B35",
 				"primary-gray": "#D9D9D9",
 				"primary-golden": "#A18150",
-				"primary-light-gray": "#f7f2f2"
+				"primary-light-gray": "#f7f2f2",
+				"primary-yellow": "#F9DD9C"
 			},
 			fontFamily: {
 				oxanium: "'Oxanium', cursive",
@@ -24,6 +25,10 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("daisyui")],
+	daisyui: {
+		themes: ["light"],
+		darkTheme: "light",
+	},
 };
 export default config;
