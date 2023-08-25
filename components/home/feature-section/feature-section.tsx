@@ -1,7 +1,7 @@
 import FeatureImageWheel from "@/assets/images/home/feature-section-wheel.png";
 import FeatureImageRefer from "@/assets/images/home/feature-section-refer.png";
 import FeatureImagePlay from "@/assets/images/home/feature-section-play.png";
-import { FeatureCard } from "./elements";
+import { FeatureCard } from "../elements";
 
 const FeatureData = [
 	{
