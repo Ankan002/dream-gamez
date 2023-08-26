@@ -22,7 +22,7 @@ const LinkBlock = (props: Props) => {
 				<Link
 					key={index}
 					href={link.href}
-					className="text-primary-gray font-poppins hover:text-white"
+					className="text-primary-gray/70 font-poppins hover:text-white"
 				>
 					{link.name}
 				</Link>
