@@ -11,7 +11,7 @@ const FeatureCard = (props: Props) => {
 	const { image, headerText, description, buttonText } = props;
 
 	return (
-		<div className="flex-1 sm:min-w-[340px] min-w-[270px] md:max-w-[420px] flex items-center justify-center bg-primary-gray m-1.5 px-3 py-3 rounded-md lg:min-h-fit sm:min-h-[250px] min-h-fit">
+		<div className="flex-1 sm:min-w-[340px] min-w-[270px] md:max-w-[420px] flex items-center justify-center bg-primary-yellow/90 m-1.5 px-3 py-3 rounded-md lg:min-h-fit sm:min-h-[250px] min-h-fit">
 			<Image
 				src={image}
 				alt={headerText}
