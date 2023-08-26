@@ -2,6 +2,7 @@ import Link from "next/link";
 import { TaglineText } from "../elements";
 import { FlowStep } from "../elements/flow-step";
 import { BsCaretRightFill } from "react-icons/bs";
+import { SignUpForm } from "@/components/common";
 
 const Hero = () => {
 	return (
@@ -37,6 +38,10 @@ const Hero = () => {
 					text="Every Referral earns you an extra Entry!"
 					className="text-sm mt-3 tracking-normal"
 				/>
+			</div>
+
+			<div className="md:flex-1 md:mt-0 mt-4 w-full flex flex-col items-center justify-center">
+				<SignUpForm />
 			</div>
 		</div>
 	);
