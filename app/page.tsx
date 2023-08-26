@@ -4,6 +4,7 @@ import {
 	FeatureSection,
 	GameSection,
 	HomeHero,
+	WinnerPrizePromotion,
 } from "@/components/home";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 			<main className="flex min-h-screen flex-col pt-16">
 				<HomeHero />
 				<GameSection />
+				<WinnerPrizePromotion />
 				<FeatureSection />
 				<Blogs />
 			</main>
