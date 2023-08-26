@@ -35,7 +35,7 @@ const Hero = () => {
 
 				<TaglineText
 					text="Every Referral earns you an extra Entry!"
-					className="text-xs mt-3"
+					className="text-sm mt-3 tracking-normal"
 				/>
 			</div>
 		</div>
