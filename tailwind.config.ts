@@ -13,7 +13,8 @@ const config: Config = {
 				"primary-gray": "#D9D9D9",
 				"primary-golden": "#A18150",
 				"primary-light-gray": "#f7f2f2",
-				"primary-yellow": "#F9DD9C"
+				"primary-yellow": "#F9DD9C",
+				"secondary-dark": "#190e22"
 			},
 			fontFamily: {
 				oxanium: "'Oxanium', cursive",

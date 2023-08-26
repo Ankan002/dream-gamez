@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/common";
+import { Footer, Navbar } from "@/components/common";
 import {
 	Blogs,
 	FeatureSection,
@@ -18,6 +18,7 @@ export default function Home() {
 				<FeatureSection />
 				<Blogs />
 			</main>
+			<Footer />
 		</>
 	);
 }
