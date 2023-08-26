@@ -1,5 +1,10 @@
 import { Navbar } from "@/components/common";
-import { Blogs, FeatureSection, HomeHero } from "@/components/home";
+import {
+	Blogs,
+	FeatureSection,
+	GameSection,
+	HomeHero,
+} from "@/components/home";
 
 export default function Home() {
 	return (
@@ -7,6 +12,7 @@ export default function Home() {
 			<Navbar />
 			<main className="flex min-h-screen flex-col pt-16">
 				<HomeHero />
+				<GameSection />
 				<FeatureSection />
 				<Blogs />
 			</main>
