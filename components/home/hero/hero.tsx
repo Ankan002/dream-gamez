@@ -5,7 +5,7 @@ import { BsCaretRightFill } from "react-icons/bs";
 
 const Hero = () => {
 	return (
-		<div className="min-h-screen px-4 py-6 bg-home-hero-bg bg-blend-color bg-cover flex md:flex-row flex-col items-center justify-center bg-right bg-black/50">
+		<div className="min-h-screen md:px-12 px-4 py-6 bg-home-hero-bg bg-blend-color bg-cover flex md:flex-row flex-col items-center justify-center bg-right bg-black/50">
 			<div className="md:flex-1 w-full flex flex-col justify-center md:items-start items-center">
 				<p className="text-white font-quicksand text-5xl tracking-widest font-semibold text-center">
 					Win 10,000 USDT!
