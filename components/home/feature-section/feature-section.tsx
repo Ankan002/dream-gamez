@@ -32,8 +32,8 @@ const FeatureData = [
 
 const FeatureSection = () => {
 	return (
-		<div className="w-full flex flex-col items-center justify-center mb-10">
-			<div className="w-full flex flex-wrap items-center justify-center px-6">
+		<div className="w-full flex flex-col items-center justify-center mb-10 px-6">
+			<div className="w-full flex flex-wrap items-center justify-center">
 				{FeatureData.map((data) => (
 					<FeatureCard
 						key={data.id}
