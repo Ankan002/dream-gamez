@@ -32,10 +32,22 @@ const FeatureData = [
 
 const FeatureSection = () => {
 	return (
-		<div className="w-full flex flex-col items-center justify-center my-10">
+		<div className="w-full flex flex-col items-center justify-center mb-10">
+			<div className="w-full flex flex-wrap items-center justify-center px-6">
+				{FeatureData.map((data) => (
+					<FeatureCard
+						key={data.id}
+						image={data.image}
+						buttonText={data.buttonText}
+						headerText={data.title}
+						description={data.description}
+					/>
+				))}
+			</div>
+
 			<CommonParagraph
 				text="100K DreamGameZ"
-				className="text-3xl font-bold text-primary-golden"
+				className="text-3xl font-bold text-primary-golden mt-10"
 			/>
 
 			<div className="px-4 py-1 bg-gradient-to-r from-primary-yellow to-primary-golden flex items-center justify-center mt-1 rounded-lg">
@@ -51,18 +63,6 @@ const FeatureSection = () => {
 				}
 				className="text-xl font-light mt-4"
 			/>
-
-			<div className="w-full flex flex-wrap items-center justify-center px-6 mt-4">
-				{FeatureData.map((data) => (
-					<FeatureCard
-						key={data.id}
-						image={data.image}
-						buttonText={data.buttonText}
-						headerText={data.title}
-						description={data.description}
-					/>
-				))}
-			</div>
 		</div>
 	);
 };

@@ -40,7 +40,7 @@ const BlogsData = [
 
 const Blog = () => {
 	return (
-		<div className="w-full flex flex-col items-center justify-center bg-primary-light-gray mt-5 px-4 py-10 border-t-2 border-t-primary-dark">
+		<div className="w-full flex flex-col items-center justify-center bg-primary-light-gray px-4 py-10 border-t-2 border-t-primary-dark">
 			<CommonHeading title="Blog Articles" />
 
 			<div className="w-full flex items-center justify-center">
