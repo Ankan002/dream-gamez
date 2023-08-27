@@ -2,7 +2,10 @@ import LinkBlock from "./link-block";
 import Image from "next/image";
 import MiniLogo from "@/assets/images/mini-logo.png";
 import { HiLocationMarker, HiPhone, HiMailOpen } from "react-icons/hi";
+import { GrFacebookOption, GrTwitter } from "react-icons/gr";
+import { FaLinkedinIn, FaPinterestP } from "react-icons/fa";
 import { RiSendPlane2Line } from "react-icons/ri";
+import Link from "next/link";
 
 const LinkBlocks = [
 	[
@@ -107,6 +110,38 @@ const Footer = () => {
 						Follow Us
 					</p>
 					<hr className="border-t-2 w-4 border-t-primary-golden" />
+
+					<div className="w-full flex flex-wrap items-center sm:justify-start justify-center my-1">
+						<Link href="#" className="m-0.5">
+							<button className="p-2 rounded-sm bg-facebook-theme">
+								<GrFacebookOption
+									size={20}
+									className="text-white"
+								/>
+							</button>
+						</Link>
+						<Link href="#" className="m-0.5">
+							<button className="p-2 rounded-sm bg-twitter-theme">
+								<GrTwitter size={20} className="text-white" />
+							</button>
+						</Link>
+						<Link href="#" className="m-0.5">
+							<button className="p-2 rounded-sm bg-pinterest-theme">
+								<FaPinterestP
+									size={20}
+									className="text-white"
+								/>
+							</button>
+						</Link>
+						<Link href="#" className="m-0.5">
+							<button className="p-2 rounded-sm bg-linkedin-theme">
+								<FaLinkedinIn
+									size={20}
+									className="text-white"
+								/>
+							</button>
+						</Link>
+					</div>
 
 					<p className="text-white/100 font-bold md:text-base text-sm font-oxanium">
 						Newsletter Sign Up
