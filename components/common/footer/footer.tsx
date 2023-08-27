@@ -61,7 +61,7 @@ const LinkBlocks = [
 const Footer = () => {
 	return (
 		<footer className="w-full flex flex-col md:pt-10 pt-4 bg-secondary-dark">
-			<div className="footer md:px-10 px-4 md:max-w-[1200px] md:footer footer-center">
+			<div className="footer md:px-10 px-4 md:max-w-[1200px]">
 				<div>
 					<Image
 						src={MiniLogo}

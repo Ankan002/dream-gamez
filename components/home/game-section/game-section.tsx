@@ -83,7 +83,7 @@ const GameSection = () => {
 				</div>
 			</div>
 
-			<div className="w-full flex items-center justify-center">
+			{/* <div className="w-full flex items-center justify-center">
 				<button
 					className="p-2 border-2 border-primary-dark rounded-full m-1"
 					onClick={onPrevClick}
@@ -96,7 +96,26 @@ const GameSection = () => {
 				>
 					<AiFillCaretRight size={20} className="text-primary-dark" />
 				</button>
+			</div> */}
+
+			<CommonParagraph
+				text="100K DreamGameZ"
+				className="text-3xl font-bold text-primary-golden mt-10"
+			/>
+
+			<div className="px-4 py-1 bg-gradient-to-r from-primary-yellow to-primary-golden flex items-center justify-center mt-1 rounded-lg">
+				<CommonParagraph
+					text="Pre-Registration Challenge"
+					className="text-2xl"
+				/>
 			</div>
+
+			<CommonParagraph
+				text={
+					'Register & Enter into DreamGameZ "100K Pre Registration" For Free'
+				}
+				className="text-xl font-light mt-4"
+			/>
 		</div>
 	);
 };
