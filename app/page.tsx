@@ -14,8 +14,8 @@ export default function Home() {
 			<main className="flex min-h-screen flex-col pt-16">
 				<HomeHero />
 				<GameSection />
-				<WinnerPrizePromotion />
 				<FeatureSection />
+				<WinnerPrizePromotion />
 				<Blogs />
 			</main>
 			<Footer />

@@ -1,6 +1,10 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import { twMerge } from "tailwind-merge";
 import { BiSolidStar } from "react-icons/bi";
+import { useGameCard } from "./hook";
+import { GameInfoModal } from "@/components/modals";
 
 interface Props {
 	gameData: {
@@ -14,6 +18,9 @@ interface Props {
 const GameCard = (props: Props) => {
 	const { gameData, className } = props;
 
+	const { isGameInfoModalOpen, closeGameInfoModal, openGameInfoModal } =
+		useGameCard();
+
 	return (
 		<div
 			className={twMerge(
@@ -26,7 +33,10 @@ const GameCard = (props: Props) => {
 					{gameData.name}
 				</p>
 
-				<button className="px-2 py-0.5 bg-gradient-to-r from-primary-yellow to-primary-golden hover:from-primary-golden hover:to-primary-yellow font-oxanium mt-1 font-medium md:text-lg text-base">
+				<button
+					className="px-2 py-0.5 bg-gradient-to-r from-primary-yellow to-primary-golden hover:from-primary-golden hover:to-primary-yellow font-oxanium mt-1 font-medium md:text-lg text-base"
+					onClick={openGameInfoModal}
+				>
 					Know More
 				</button>
 			</div>
@@ -51,6 +61,13 @@ const GameCard = (props: Props) => {
 					</div>
 				))}
 			</div>
+
+			<GameInfoModal
+				isModalOpen={isGameInfoModalOpen}
+				onRequestModalClose={closeGameInfoModal}
+				gameImage={gameData.image}
+				gameName={gameData.name}
+			/>
 		</div>
 	);
 };

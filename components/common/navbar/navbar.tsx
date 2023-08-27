@@ -6,6 +6,8 @@ import Logo from "@/assets/images/logo.png";
 import { HiMenu } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 import { useNavbar } from "./hook";
+import { useRecoilValue } from "recoil";
+import { modalStateAtom } from "@/atoms";
 
 const NavLinks = [
 	{
@@ -29,9 +31,14 @@ const NavLinks = [
 const Navbar = () => {
 	const { isMobileNavOpen, openMobileNavbar, closeMobileNavbar } =
 		useNavbar();
+	const isGlobalModalActive = useRecoilValue<boolean>(modalStateAtom);
 
 	return (
-		<nav className="py-1 px-2 w-full flex bg-primary-dark items-center justify-between fixed top-0 left-0 z-10">
+		<nav
+			className={`py-1 px-2 w-full flex bg-primary-dark items-center justify-between fixed top-0 left-0 ${
+				isGlobalModalActive ? "" : "z-10"
+			}`}
+		>
 			<Link href="/">
 				<Image
 					src={Logo}

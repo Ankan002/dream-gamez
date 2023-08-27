@@ -2,7 +2,7 @@ import { CommonParagraph } from "../elements";
 
 const WinnerPrizePromotion = () => {
 	return (
-		<div className="w-full flex flex-col py-2 md:bg-gradient-to-r bg-gradient-to-b from-primary-golden via-primary-yellow to-primary-golden">
+		<div className="w-full flex flex-col py-10 bg-winner-prize-promotion-bg bg-center bg-cover">
 			<div className="w-full flex md:flex-row flex-col md:px-10 px-4">
 				<div className="flex-1 flex flex-col w-full items-center justify-center">
 					<div className="min-w-[250px] bg-white px-3 py-2 md:my-6 my-4 font-poppins text-3xl text-primary-dark flex items-center justify-center text-center font-semibold rounded-xl">

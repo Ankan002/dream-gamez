@@ -28,6 +28,8 @@ const config: Config = {
 			},
 			backgroundImage: {
 				"home-hero-bg": "url('/images/home-hero-bg.png')",
+				"winner-prize-promotion-bg":
+					"url('/images/winner-prize-promotion-bg.jpg')",
 			},
 		},
 	},
