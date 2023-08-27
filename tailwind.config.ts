@@ -16,6 +16,10 @@ const config: Config = {
 				"primary-yellow": "#F9DD9C",
 				"secondary-dark": "#190e22",
 				"primary-maroon": "#3d1428",
+				"facebook-theme": "#3c5998",
+				"twitter-theme": "#56acee",
+				"pinterest-theme": "#d71e18",
+				"linkedin-theme": "#1565c0",
 			},
 			fontFamily: {
 				oxanium: "'Oxanium', cursive",
