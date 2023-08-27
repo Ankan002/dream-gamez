@@ -14,7 +14,8 @@ const config: Config = {
 				"primary-golden": "#A18150",
 				"primary-light-gray": "#f7f2f2",
 				"primary-yellow": "#F9DD9C",
-				"secondary-dark": "#190e22"
+				"secondary-dark": "#190e22",
+				"primary-maroon": "#3d1428",
 			},
 			fontFamily: {
 				oxanium: "'Oxanium', cursive",
