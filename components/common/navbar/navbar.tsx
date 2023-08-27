@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/assets/images/logo.png";
+import Logo from "@/assets/images/mini-logo.png";
 import { HiMenu } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 import { useNavbar } from "./hook";

@@ -17,7 +17,7 @@ const SignUpForm = () => {
 	} = useSignUpForm();
 
 	return (
-		<div className="w-full md:max-w-[400px] bg-primary-gray p-4 rounded-2xl flex flex-col items-center justify-center">
+		<div className="w-full md:max-w-[500px] md:min-h-[500px] bg-primary-gray p-4 rounded-2xl flex flex-col items-center justify-center">
 			<h1 className="text-2xl font-poppins font-light text-center">
 				Join DreamGameZ
 			</h1>
