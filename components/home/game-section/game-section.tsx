@@ -1,10 +1,15 @@
+"use client";
+
 import { CommonParagraph, GameCard } from "../elements";
+import { AiFillCaretRight, AiFillCaretLeft } from "react-icons/ai";
 
 import GameImageOne from "@/assets/images/home/game-img-1.png";
 import GameImageTwo from "@/assets/images/home/game-img-2.png";
 import GameImageThree from "@/assets/images/home/game-img-3.png";
 import GameImageFour from "@/assets/images/home/game-img-4.png";
 import GameImageFive from "@/assets/images/home/game-img-5.png";
+import { createRef } from "react";
+import { useGameSection } from "./hook";
 
 const GameData = [
 	{
@@ -15,6 +20,7 @@ const GameData = [
 			"Play as low as - 2USDT",
 		],
 		image: GameImageOne,
+		ref: createRef<HTMLDivElement>(),
 	},
 	{
 		name: "DreamZ Dual",
@@ -24,25 +30,33 @@ const GameData = [
 			"Play as low as - 1USDT",
 		],
 		image: GameImageTwo,
+		ref: createRef<HTMLDivElement>(),
 	},
 	{
 		name: "Jackpot Madness",
 		highlights: ["Instant Winner", "Bigger the pool Higher the returns"],
 		image: GameImageThree,
+		ref: createRef<HTMLDivElement>(),
 	},
 	{
 		name: "DreamZ",
 		highlights: ["Instant Winner", "Bigger the pool Higher the returns"],
 		image: GameImageFour,
+		ref: createRef<HTMLDivElement>(),
 	},
 	{
 		name: "DreamZ Casual",
 		highlights: ["Lucky Dice", "Stone - Paper - Scissor"],
 		image: GameImageFive,
+		ref: createRef<HTMLDivElement>(),
 	},
 ];
 
 const GameSection = () => {
+	const { onNextClick, onPrevClick } = useGameSection({
+		gameData: GameData,
+	});
+
 	return (
 		<div className="w-full flex flex-col items-center justify-center px-3 pt-6 my-10">
 			<CommonParagraph text="DreamGamez" className="text-xl" />
@@ -57,7 +71,7 @@ const GameSection = () => {
 						GameData.length < 5 ? "lg:justify-center" : ""
 					} ${GameData.length < 4 ? "sm:justify-center" : ""} ${
 						GameData.length < 2 ? "justify-center" : ""
-					}`}
+					} scroll-smooth`}
 				>
 					{GameData.map((gameData, index) => (
 						<GameCard
@@ -67,6 +81,21 @@ const GameSection = () => {
 						/>
 					))}
 				</div>
+			</div>
+
+			<div className="w-full flex items-center justify-center">
+				<button
+					className="p-2 border-2 border-primary-dark rounded-full m-1"
+					onClick={onPrevClick}
+				>
+					<AiFillCaretLeft size={20} className="text-primary-dark" />
+				</button>
+				<button
+					className="p-2 border-2 border-primary-dark rounded-full m-1"
+					onClick={onNextClick}
+				>
+					<AiFillCaretRight size={20} className="text-primary-dark" />
+				</button>
 			</div>
 		</div>
 	);

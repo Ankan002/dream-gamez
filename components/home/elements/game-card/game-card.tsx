@@ -11,6 +11,7 @@ interface Props {
 		name: string;
 		highlights: Array<string>;
 		image: StaticImageData;
+		ref: React.RefObject<HTMLDivElement>;
 	};
 	className?: string;
 }
@@ -27,6 +28,7 @@ const GameCard = (props: Props) => {
 				"relative md:w-60 sm:w-52 w-40 flex flex-col items-center justify-center mx-2 rounded-3xl p-2 border-2 bg-primary-maroon border-primary-golden",
 				className
 			)}
+			ref={gameData.ref}
 		>
 			<div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 bg-primary-dark/80 rounded-3xl cursor-pointer transition-all ease-in-out hover:shadow-lg hover:shadow-primary-golden flex flex-col items-center justify-center">
 				<p className="font-oxanium md:text-lg text-base text-primary-yellow font-bold tracking-wide">
